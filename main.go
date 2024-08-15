@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	COUNT      = 100 // COUNT is the total number of frames to create
-	BATCH_SIZE = 20  // BATCH_SIZE is the number of frames inside each chunk, i.e., inside each goroutine.
+	COUNT      = 50 // COUNT is the total number of frames to create
+	BATCH_SIZE = 10 // BATCH_SIZE is the number of frames inside each chunk, i.e., inside each goroutine.
 )
 
 // Its important to note that the code below is conderating the calculation of the frame creation in parallel based
