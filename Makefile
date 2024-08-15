@@ -1,6 +1,6 @@
 .PHONY: run-docker
 run-docker:
-	docker-compose up -d --force-recreate --no-deps --build
+	docker compose up --force-recreate --no-deps --build
 
 .PHONY: run
 run:

@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	COUNT      = 50 // COUNT is the total number of frames to create
-	BATCH_SIZE = 10 // BATCH_SIZE is the number of frames inside each chunk, i.e., inside each goroutine.
+	COUNT      = 100 // COUNT is the total number of frames to create
+	BATCH_SIZE = 10  // BATCH_SIZE is the number of frames inside each chunk, i.e., inside each goroutine.
 )
 
 // Its important to note that the code below is conderating the calculation of the frame creation in parallel based
@@ -20,8 +20,8 @@ const (
 
 func main() {
 	// Setup environment
-	os.RemoveAll("/output/")
-	os.MkdirAll("/output/", 755)
+	os.RemoveAll("output/")
+	os.MkdirAll("output/", 755)
 	start := time.Now()
 
 	// Load the source image
